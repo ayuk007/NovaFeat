@@ -1,0 +1,3 @@
+temp_directory: .afe_tmp
+artifact_directory: .afe_artifacts
+checkpoint_directory: .afe_checkpoints

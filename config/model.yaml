@@ -1,0 +1,81 @@
+default_provider: openai
+
+planner:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 2048
+  timeout_seconds: 60
+  max_retries: 3
+
+reasoning:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 2048
+  timeout_seconds: 60
+  max_retries: 3
+
+code_generation:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_tokens: 4096
+  timeout_seconds: 90
+  max_retries: 2
+
+pii_detection:
+  provider: huggingface-local
+  model: falcon-h1-tiny-90m
+  temperature: 0.0
+  max_tokens: 256
+  timeout_seconds: 30
+  max_retries: 1
+
+summarization:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.3
+  max_tokens: 1024
+  timeout_seconds: 30
+  max_retries: 2
+
+critique:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 1024
+  timeout_seconds: 30
+  max_retries: 2
+
+validation:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_tokens: 1024
+  timeout_seconds: 30
+  max_retries: 2
+
+context_compression:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_tokens: 1024
+  timeout_seconds: 30
+  max_retries: 2
+
+feedback:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.2
+  max_tokens: 512
+  timeout_seconds: 30
+  max_retries: 2
+
+tool_selection:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.0
+  max_tokens: 512
+  timeout_seconds: 30
+  max_retries: 2

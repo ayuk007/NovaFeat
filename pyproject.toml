@@ -1,0 +1,44 @@
+[project]
+name = "afe-harness"
+version = "0.1.0"
+description = "Agentic Feature Engineering Harness"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "typer>=0.12",
+    "rich>=13.7",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "langgraph>=0.2",
+    "langchain>=0.3",
+    "langchain-core>=0.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "mypy>=1.10", "ruff>=0.5", "black>=24.0", "pre-commit>=3.7"]
+
+[project.scripts]
+afe = "afe.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_ignores = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

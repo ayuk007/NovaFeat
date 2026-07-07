@@ -1,0 +1,7 @@
+max_rows_in_memory: 2000000
+preview_row_count: 5
+approval_policy: always
+cache_enabled: true
+cache_ttl_seconds: 3600
+large_dataset_threshold_gb: 5.0
+medium_dataset_threshold_gb: 0.5

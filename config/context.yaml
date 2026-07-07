@@ -1,0 +1,4 @@
+max_context_tokens: 8000
+summarization_trigger_tokens: 6000
+rolling_memory_turns: 20
+reserve_tokens_for_response: 1024

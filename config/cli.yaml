@@ -1,0 +1,4 @@
+colors_enabled: true
+verbosity: normal
+require_confirmations: true
+history_file: .afe_tmp/cli_history

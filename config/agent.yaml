@@ -1,0 +1,5 @@
+max_planning_iterations: 5
+max_replans: 3
+require_human_approval: true
+dynamic_tool_generation_enabled: true
+dynamic_tool_requires_approval: true

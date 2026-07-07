@@ -1,0 +1,5 @@
+level: INFO
+format: plain
+log_to_file: true
+log_file_path: .afe_tmp/logs/afe.log
+log_to_json: false

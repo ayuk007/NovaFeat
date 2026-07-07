@@ -1,0 +1,10 @@
+pii_detection_enabled: true
+pii_confidence_threshold: 0.6
+allowed_columns: []
+blocked_columns: []
+sandbox_backend: subprocess
+sandbox_cpu_seconds: 10
+sandbox_memory_mb: 512
+sandbox_timeout_seconds: 15
+sandbox_network_enabled: false
+require_human_approval_for_generated_code: true
